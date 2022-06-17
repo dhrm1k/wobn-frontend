@@ -24,7 +24,7 @@ const Ninjas = ({ ninjas }) => {
 </div>
       
 <form action="https://wobn-backend.dharmik2004.repl.co/post" method="post">
-  <label for="thoughts">Post:</label>
+  <label htmlFor={thoughts}>Post:</label>
   <input type="thoughts" id="thoughts" name="thoughts"   />
   <button type="submit">Submit</button>
 </form>
