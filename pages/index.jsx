@@ -5,7 +5,7 @@ import Link from 'next/link'
 import styles from '../styles/Home.module.css'
 
 
-export const getStaticProps = async () => {
+export async function getServerSideProps()  {
   const res = await fetch('https://wobn-backend.dharmik2004.repl.co');
   const data = await res.json();
 
